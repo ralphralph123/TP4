@@ -9,11 +9,12 @@
             #### DÉBUT DÉFI DESSINER DÉS ####
 
             # sensé être : 4 * l + 3 * d = droite-gauche
-            # case = ligne rouge, decalage = ligne verte
-            case = self.dimension_case
-            decalage = int(0.2 * DIMENSION_BASE)
+            # case = ligne rouge (d) , decalage = ligne verte (l)
+            case = int(0.175 * self.dimension_case)
+            decalage = int(0.1 * self.dimension_case)
+            self.arene.emplacement=coordonnees
 
-            for coordonnees, texte_de in self.arene.afficher_de(coordonnees):
+            for coordonnees, texte_de in self.arene.des.keys() :
                 if texte_de == 1:
                     # milieu
                     self.create_oval(gauche + decalage * 2 + case, haut + decalage * 2 + case,
