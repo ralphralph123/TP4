@@ -10,7 +10,7 @@
 
             # sensé être : 4 * l + 3 * d = droite-gauche
             # case = ligne rouge (d) , decalage = ligne verte (l)
-            case = int(0.175 * self.dimension_case)
+            case = int(0.17 * self.dimension_case)
             decalage = int(0.1 * self.dimension_case)
             self.arene.emplacement=coordonnees
 
